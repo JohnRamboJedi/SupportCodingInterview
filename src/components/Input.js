@@ -45,7 +45,8 @@ export default class Input extends Component {
 				<div>
 				<center>
     		<div>
-				    <h1>Welcome To Godaddy ATM</h1>
+				    <h1>Welcome to the Godaddy ATM</h1>
+						<h2>Enter your account number to get started</h2>
 				</div>
 				</center>
 			<div>
@@ -62,7 +63,9 @@ export default class Input extends Component {
           <input type="submit" value="Submit" />
         </form>
 				</center>
+				<center>
         {this.state.invalidAccount && <div>Unknown User</div>}
+				</center>
         </div>
 				</div>
     	)
