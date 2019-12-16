@@ -9,4 +9,4 @@ Build and Run this application
   * Enter command npm i
   * Enter command npm start
   
-The applciation will auto load in a browser and you can test it!
+The application will auto load in a browser and you can test it!
