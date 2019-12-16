@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { Redirect, Switch } from 'react-router-dom'
+import '../index.css'
 
 export default class Input extends Component {
 	constructor() {
@@ -41,11 +42,14 @@ export default class Input extends Component {
 
     render() {
     	return (
-				<React.Fragment>
-    		<div className="center">
+				<div>
+				<center>
+    		<div>
 				    <h1>Welcome To Godaddy ATM</h1>
-						</div>
-			<div className="center">
+				</div>
+				</center>
+			<div>
+			<center>
     		<form onSubmit={this.handleSubmit}>
           <label>
             <input
@@ -57,9 +61,10 @@ export default class Input extends Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
+				</center>
         {this.state.invalidAccount && <div>Unknown User</div>}
         </div>
-				</React.Fragment>
+				</div>
     	)
     }
 }

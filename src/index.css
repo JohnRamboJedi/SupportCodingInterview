@@ -1,13 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Josefin Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.logout{
+  color: #0000CD;
+  padding: 5px;
 }

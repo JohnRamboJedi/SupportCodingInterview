@@ -1,37 +1,27 @@
 import React, {Component} from 'react';
 import './App.css';
 import Input from "./components/Input"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from "react-router-dom";
 import AccountPage from './components/AccountPage';
 
 
 class App extends Component {
   constructor() {
     super()
-    localStorage.clear()
+    this.state = {
+      isLoggedIn: false,
+      accountInfo: {}
+    }
   }
 
 submittedData = (accountNum, accountAmt) => {
-  window.localStorage.setItem(accountNum, accountAmt);
-  window.location.href = "/account"
-
+this.setState({accountInfo: {accountNum: accountNum, accountAmt: accountAmt}})
+this.setState({isLoggedIn: true});
 }
 
   render() {
+    const {isLoggedIn} = this.state;
     return (
-      <Router>
-      <Switch>
-          <Route path="/account" component={() => <AccountPage/>}/>
-          <Route path="/">
-            <Input submission={this.submittedData}/>
-          </Route>
-        </Switch>
-    </Router>
+    isLoggedIn ?  <AccountPage accountData={this.state.accountInfo}/> : <Input submission={this.submittedData}/>
       )
   }
 }

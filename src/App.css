@@ -1,8 +1,5 @@
-.App {
-  text-align: center;
-}
 
-.center {
-  display: flex;
-  justify-content: center;
+.App {
+  font-family: 'Anton', sans-serif;
+  background-color: #f1f1f1;
 }
