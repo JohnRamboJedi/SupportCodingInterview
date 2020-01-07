@@ -8,6 +8,7 @@ Choose directory to download the repository
 Clone this repository
   * Open terminal 
   * Enter command git clone https://github.com/JohnRamboJedi/supportcodinginterview.git
+  * At this point you may be prompted to install Dev Tools, if so click to install and wait for that to complete
 
 Build and Run this application 
   * Open terminal
