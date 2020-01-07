@@ -11,6 +11,8 @@ Clone this repository
 
 Build and Run this application 
   * Open terminal
+  * Enter command cd supportcodinginterview in order to change to the folder you cloned from this repo
+  * If you do not have Node.js installed locally, please go to https://nodejs.org/en/ and install the LTS version
   * Enter command npm i
   * Enter command npm start
   
